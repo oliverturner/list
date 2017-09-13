@@ -1,0 +1,52 @@
+import styled from "styled-components";
+
+export const Footer = styled.footer`
+  display: flex;
+  flex-wrap: wrap;
+  
+  position: fixed;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
+  padding: 10px 15px 0 0;
+  border-top: 2px solid #aaa;
+  background-color: #ededed;
+`;
+
+export const FooterLeft = styled.div`
+  width: 50%;
+  padding-left: 15px;
+
+  @media (max-width: ${mobileWidth}px) {
+    width: 100%;
+  }
+`;
+
+export const FooterRight = styled.div`
+  width: 50%;
+  bottom: 0;
+  color: #aaa;
+  position: relative;
+
+  small {
+    width: 600px;
+    max-width: 100%;
+    position: absolute;
+    bottom: 40px;
+    right: 20px;
+  }
+
+  a,
+  a:visited,
+  a:hover {
+    color: #555;
+  }
+
+  @media (max-width: ${mobileWidth}px) {
+    width: 100%;
+
+    small {
+      position: initial;
+    }
+  }
+`;
